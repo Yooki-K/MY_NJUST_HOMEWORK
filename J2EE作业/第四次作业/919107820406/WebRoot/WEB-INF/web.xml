@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>919107820406</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>test.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <context-param>
+        <param-name>id</param-name>
+        <param-value>245</param-value>
+    </context-param>
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>况宇</param-value>
+    </context-param>
+  <servlet>
+    <servlet-name>SharedServlet</servlet-name>
+    <servlet-class>com.serlet.SharedServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ValidateSharedServlet</servlet-name>
+    <servlet-class>com.servlet.ValidateSharedServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SharedServlet</servlet-name>
+        <url-pattern>/shared</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValidateSharedServlet</servlet-name>
+    <url-pattern>/validate</url-pattern>
+  </servlet-mapping>
+</web-app>

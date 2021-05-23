@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login.html</title>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=utf-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  <body>
+<form id="login_form" name="login_form" >
+      <table align="center">
+   <tr>
+
+    <td align="center">用 户:</td>
+
+    <td><input type="text" name="username"  /></td>
+
+   </tr>
+
+   <tr>
+
+    <td align="center">密 码:</td>
+
+    <td><input type="password" name="password"/></td>
+
+   </tr>
+   
+	<tr>
+	<td align="center">验 证 码:</td>
+	<td>
+		<input type="text" name="capcha"/>
+		<label id="capcha_label" style="font-size:22px;color:#8c8480"></label>
+	</td>
+	</tr>
+	
+	<tr>
+		<td align="center">类 别:</td>
+		<td><select style="font-size:18px; width:100px;" >
+			<option value="1">学生</option>
+			<option value="2">老师</option>
+			<option value="3">管理</option>
+		</select></td>
+	</tr>
+   <tr align="center">
+   <td colspan="2">
+     <button id="login" onclick="login()">登录</button>
+     <a href="https://www.bilibili.com/">帮助</a>
+     <a href="https://www.w3school.com.cn/">忘密</a>	
+   </td>
+   </tr>
+   
+	</form>
+
+  </body>
+   <script type="text/javascript">
+    	login = function(){
+    		alert("成功")
+    		//Jpython.run();
+    	}
+    </script>
+   <script type="text/javascript">
+  function codes(n){
+      var a="0123456789";
+      var b="";
+    for (var i = 0;i<n;i++){
+      var index=Math.floor(Math.random()*10);
+       b+=a.charAt(index);
+ 
+    }
+    return b;
+    };
+    function show(){
+      document.getElementById("capcha_label").innerHTML=codes(4);
+     
+  }
+  window.onload=show;
+ 
+ 
+</script>
+</html>

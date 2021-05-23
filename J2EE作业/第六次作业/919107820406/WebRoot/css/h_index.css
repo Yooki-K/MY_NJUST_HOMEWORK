@@ -1,0 +1,63 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {min-width: 1130px;}
+.zlTable{
+    		margin: auto;
+    	}
+.zlTable tr th.brTL {
+            border-top: 1px solid #d9d9d9;
+            border-left: 1px solid #d9d9d9;
+            height:50px;
+        }
+
+.zlTable tr th.brTR {
+            border-top: 1px solid #d9d9d9;
+            border-right: 1px solid #d9d9d9;
+            height:50px;
+        }
+.ZYCon{
+			text-align:center;
+		}
+.font12 td{
+			border-bottom:2px solid #292929;
+			font-family:微软雅黑;
+			font-size:18px;
+			height:36px;
+		}
+.zlMes{
+			font-family:微软雅黑;
+			font-size:18px;
+			color:red;
+		}
+.thread {background: none;border: none;color: white;margin-left: 10px;background-color:#292929;}
+.zt_center { height:44px; background:url(../Img/opacity70.png) repeat; position: relative;z-index: 998;}
+.zt_logo { float:left; width:300px;left: 50px;position:absolute;color: #fff;font-size: 30px;}
+.zt_logo a {color: #fff;line-height: 24px;text-decoration: none;font-size: 30px;text-overflow: ellipsis;white-space: nowrap;}
+.zt_logo a img {border: none;}
+/*登录后*/
+.zt_user {position:absolute;float:right; width:106px; height:36px;right:156px}
+.zt_u_abs {  height:36px;  margin-top:3px;}
+.zt_u_bg { display: none;padding-inline-start:10px;height:40px;width:106px; padding-top:5px;background:rgba(76, 76, 76, 0.0) url(../Img/opacity60.png) repeat;position: absolute;top:15px;}
+.zt_u_bg a { color:#fff;}
+.zt_u_b:hover+.zt_u_bg,.zt_u_bg:hover {
+	display: block;
+}
+.zt_u_bg a:hover{text-decoration:underline;}
+.zt_u_pro { border-radius:12px; vertical-align:middle; display:inline}
+.zt_u_name ,.zt_u_x {  height:24px; margin-left:25px;margin-top:-1px; color:#fff; font-size:20px; line-height:24px; vertical-align:middle;display: inline-block;max-width: 60px;_width:60px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.zt_u_b{height:25px;background:url(../Img/ss_member.png) 0px 0px no-repeat;width:20px;margin: 10px 0 0 5px;vertical-align: middle;border: none}
+.zt_u_x { background:url(../images/mooc_h_14_08/ss_member.png) 51px -104px no-repeat; }
+.zt_u_enter ,.zt_u_exit { padding-left:20px;  line-height:30px;}
+.zt_u_enter { background:url(../images/mooc_h_14_08/ss_member.png) 16px 7px no-repeat;}
+.zt_u_exit {
+	background: url(../Img/ss_member.png) 0px -20px no-repeat; list-style:none;}
+/*登录前*/
+.zt_login { float:right; padding-right:20px;}
+.zt_login a {color: #fff;display: inline-block;height: 42px;line-height:42px; padding-right: 10px; text-decoration: none;float: right;}
+.zt_l_loading { width: 47px;  background: url(../images/mooc_h_14_08/logbg.png) 0 center no-repeat;  text-align: center; color: #fff;}
+
+.zt_l_loading:hover { color:#fff; text-decoration:none;}
+.zt_register { display:inline-block; height:42px; padding-left:15px; line-height:42px; color:#fff;float: right;}
+.zt_register:hover { color:#fff;}
+

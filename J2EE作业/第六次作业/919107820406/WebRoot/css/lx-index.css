@@ -1,0 +1,683 @@
+HTML,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+input,
+td {
+	border: none;
+	font-family: "微软雅黑", "黑体", "宋体";
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+	color: #333;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal
+}
+
+ul,
+ol,
+li {
+	list-style: none
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+img {
+	border: 0;
+	vertical-align: middle
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+p {
+	word-wrap: break-word
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: "";
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+/* 背景特效 开始 */
+.lx_bgColor {
+	/*Fallback if gradeints don't work */
+	/* background: #141e6e; */
+	/*Linear gradient... */
+	/* background:
+		-webkit-radial-gradient(at center, #0075c3, #000b61);
+	background:
+		-moz-radial-gradient(at center, #0075c3, #000b61);
+	background:
+		-o-radial-gradient(at center, #0075c3, #000b61);
+	background:
+		radial-gradient(at center, #0075c3, #000b61); */
+		background: url(../Img/banner.jpg) no-repeat center;
+}
+
+.apImgTitle {
+	position: fixed;
+	width: 42%;
+	left: 30%;
+	top: 30%;
+}
+
+.apTitle {
+	font-size: 40px;
+	color: #fff;
+	position: fixed;
+	top: 32%;
+	width: 100%;
+	text-align: center;
+}
+
+.logcon {
+	position: fixed;
+	width: 100%;
+	top: 47%;
+	text-align: center;
+}
+
+.logcon input {
+	padding: 10px 15px;
+	border-radius: 3px;
+	border: none;
+	margin-right: 10px;
+	width: 220px;
+}
+
+.logcon button {
+	padding: 7px 20px 10px 20px;
+	border: none;
+	background: #fff;
+	border-radius: 3px;
+}
+
+.logcon button:hover {
+	cursor: pointer;
+}
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+
+#particles-js {
+	width: 100%;
+	height: 100%;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* 背景特效 结束 */
+
+/* 忘记密码1 开始 */
+.lx_header {
+	width: 100%;
+	height: 70px;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.lx_mainWidth {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.lx_headerLogo {
+	max-width: 496px;
+}
+
+.lx_footer {
+	height: 70px;
+	background-color: #fff;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.lx_footer p,
+.lx_footer p a {
+	font-size: 14px;
+	color: #666;
+	line-height: 24px;
+}
+
+.lx_footer p a:hover {
+	color: #0180fe;
+}
+
+.lx_flex {
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.lx_login {
+	height: 100vh;
+}
+
+.lx_center {
+	width: 100%;
+	height: -webkit-calc(100% - 140px);
+	height: -moz-calc(100% - 140px);
+	height: calc(100% - 140px);
+}
+
+.lx_absolute {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.lx_forgetBox {
+	width: 621px;
+	border-radius: 6px;
+	background-color: #fff;
+	padding: 15px 30px 20px;
+}
+
+.lx_forgetBox h2 {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+.lx_rowCenter {
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.lx_rowBetween {
+	-webkit-justify-content: space-between;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.lx_step {
+	padding: 0 14px;
+	margin: 15px 0;
+}
+
+.lx_step>span {
+	margin-right: 38px;
+}
+
+.lx_step>span:last-child {
+	margin-right: 0;
+}
+
+.lx_confirm {
+	color: #999;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #c9d0dd;
+	margin-bottom: 14px;
+}
+
+.lx_way {
+	padding-left: 35px;
+}
+
+.lx_way>span {
+	display: inline-block;
+	min-width: 63px;
+	-moz-text-align-last: justify;
+	text-align-last: justify;
+}
+
+.lx_way input[type=radio] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url('../images/radio.png') no-repeat center;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	margin-right: 4px;
+	width: 16px;
+	height: 16px;
+	border: none;
+}
+
+.lx_way input[type=radio]:checked {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url('../images/radio-check.png') no-repeat center;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.lx_way>label {
+	margin-right: 20px;
+}
+
+.lx_way>label:last-child {
+	margin-right: 0;
+}
+
+.lx_radio {
+	display: none;
+	margin-bottom: 10px;
+}
+
+.lx_input {
+	width: 304px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 6px;
+	border: 1px solid #eee;
+	padding-left: 14px;
+	background-color: #fff;
+}
+.lx_capcha{
+	position: absolute;
+	left:1x;
+	width: 200px;
+	height: 25px;
+	line-height: 44px;
+	border-radius: 6px;
+	border: 1px solid #eee;
+	padding-left: 14px;
+	background-color: #fff;
+}
+input::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+	color: #999;
+	font-size: 16px;
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #999;
+	font-size: 16px;
+}
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #999;
+	font-size: 16px;
+}
+
+input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #999;
+	font-size: 16px;
+}
+
+input::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #999;
+	font-size: 16px;
+}
+
+.lx_bottom14 {
+	margin-bottom: 12px;
+}
+
+.lx_submit {
+	padding: 15px 0;
+	text-align: center;
+	position: relative;
+}
+
+.lx_submit a {
+	width: 218px;
+	height: 39px;
+	display: inline-block;
+	border-radius: 6px;
+	background-color: #0047ae;
+	color: #fff;
+	font-weight: bold;
+	line-height: 39px;
+	text-align: center;
+}
+
+.lx_tips {
+	border: 1px solid #cae0ff;
+	background-color: #edf8ff;
+	padding: 10px;
+}
+
+.lx_tips p {
+	line-height: 26px;
+}
+
+.lx_tips p a {
+	color: #0047ae;
+}
+
+/* 忘记密码1 结束 */
+
+/* 忘记密码3 开始 */
+.lx_success>img {
+	margin-right: 20px;
+}
+
+.lx_success {
+	font-size: 24px;
+	padding: 30px 0;
+}
+
+.lx_btns a {
+	width: 148px;
+	height: 39px;
+	margin-right: 13px;
+}
+
+.lx_btns a:last-child {
+	margin-right: 0;
+}
+
+.lx_newPassword {
+	padding-left: 30px;
+}
+
+.lx_newPassword span {
+	min-width: 95px;
+	text-align: right;
+	display: inline-block;
+}
+
+.lx_marBottom18 {
+	margin-bottom: 15px;
+}
+
+.lx_error {
+	color: #999;
+	padding-left: 120px;
+	padding-top: 5px;
+}
+
+.lx_binding {
+	padding: 34px 119px;
+	padding-bottom: 20px;
+}
+
+.lx_bindPic {
+	text-align: center;
+}
+
+.lx_bindPic>img {
+	margin-right: 28px;
+}
+
+.lx_bindPic>img:last-child {
+	margin-right: 0;
+}
+
+.lx_binding p {
+	color: #999;
+	line-height: 25px;
+	margin: 20px 0;
+}
+
+.lx_bindInput {
+	width: 100%;
+	padding-left: 55px;
+	background: #fff url('../web-images/phone.png') no-repeat;
+	-o-background-size: 44px 44px;
+	background-size: 44px 44px;
+	background-position: left center;
+	margin-bottom: 15px;
+}
+
+.lx_passwordInput {
+	background: #fff url('../web-images/password.png') no-repeat;
+	-o-background-size: 44px 44px;
+	background-size: 44px 44px;
+	background-position: left center;
+	/*margin-bottom: 0;*/
+	/*margin-top: 5px;*/
+}
+.lx_codeInput {
+	width: 100%;
+	padding-left: 55px;
+	background: #fff url('../web-images/password.png') no-repeat;
+	-o-background-size: 44px 44px;
+	background-size: 44px 44px;
+	background-position: left center;
+}
+
+
+.lx_mcodeInput {
+	width: 60%;
+}
+
+.lx_phoneInput {
+	width: 100%;
+	padding-left: 55px;
+	padding-right: 128px;
+	background: #fff url('../web-images/code.png') no-repeat;
+	-o-background-size: 44px 44px;
+	background-size: 44px 44px;
+	background-position: left center;
+	margin-bottom: 15px;
+}
+
+.lx_mobileInput {
+	background: #fff url('../web-images/mobile.png') no-repeat;
+	-o-background-size: 44px 44px;
+	background-size: 44px 44px;
+	background-position: left center;
+}
+
+.lx_rowBetween {
+	-webkit-justify-content: space-between;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.lx_verify {
+	margin-bottom: 15px;
+}
+
+.lx_verify>img {
+	max-width: 130px;
+	max-height: 40px;
+}
+
+.lx_btn {
+	width: 121px;
+	height: 34px;
+	border-radius: 6px;
+	background-color: #0047ae;
+	color: #fff;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: absolute;
+	top: 5px;
+	right: 6px;
+}
+
+.lx_relative {
+	position: relative;
+}
+
+.lx_sure {
+	padding-bottom: 15px;
+	padding-top: 30px;
+}
+
+.lx_sure a {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-weight: normal;
+}
+
+/* 忘记密码3 结束 */
+
+/* 登录 开始 */
+.lx_loginBox {
+	position: absolute;
+	left: 50%;
+	margin-left:-200px;/*往左移动自身宽(div2宽)的一半*/
+	width: 400px;
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 8px 24px 25px 24px;
+}
+
+.lx_wechatLogin {
+	margin-left: 175px;
+}
+
+.lx_wechatCode {
+	position: absolute;
+	top: 0;
+	right: -15px;
+}
+
+.lx_tabs {
+	margin-top: 14px;
+}
+
+.lx_tabs a {
+	font-size: 20px;
+	color: #a1a6bb;
+	font-weight: bold;
+	display: inline-block;
+	padding-bottom: 6px;
+	margin-right: 20px;
+}
+
+.lx_tabs a:last-child {
+	margin-right: 0;
+}
+
+.lx_tabs a.active {
+	color: #0047ae;
+	border-bottom: 2px solid #0047ae;
+}
+
+.lx_content {
+	margin-top: 24px;
+}
+
+.lx_tabContent {
+	display: none;
+}
+
+.lx_toLogin a {
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	font-size: 18px;
+}
+
+.lx_loginRow img {
+	margin-right: 5px;
+}
+
+.lx_toLogin {
+	padding: 0 0 20px;
+}
+
+.lx_phoneLogin {
+	display: block;
+	width: 100%;
+	padding: 0 .4rem;
+}
+
+/* 登录 结束 */
+
+
