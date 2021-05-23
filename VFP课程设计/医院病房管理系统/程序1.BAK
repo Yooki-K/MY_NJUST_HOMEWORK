@@ -1,0 +1,62 @@
+* VFP 主程序   分析  1 *
+* *
+********************************
+wait window
+SET talk off && 不显示命令结果。
+Clear && 清屏
+ZOOM window screen max && 将 VFP 系统窗口最大化。
+set path to D:\game && 设置 VFP 系统默认路径为当前路径。当你第一次运行时，可将其打开以便观察。
+oldpath=set("path") && 把程序执行前的路径存入变量，以便程序结束后将它恢复
+? oldpath && 显示的是程序执行前的路径
+wait wind " 显示的是程序执行前的路径 "&& 暂定，以便观察，按任意键继续。
+=setpath() && 调用自定义函数“ setpath() ”
+OPEN database 医院管理数据库
+PUBLIC qx
+qx=''
+_screen.visible=.f.
+DO form 登录表单.scx && 显示应用程序的欢迎界面。
+&& 执行事件循环
+read events
+* 以下是退出应用程序
+CLOSE database
+SET sysmenu to default && 设置 VFP 系统为默认状态。
+SET path to &oldpath && 重新设置程序执行前的路径。
+? set("path") && 显示当前路径
+wait wind " 重新设为原来路径 " && 暂定，以便观察，按任意键继续。
+Release oldpath && 释放内存变更。
+FUNCTION setpath() && 自定义函数，函数名“ setpath ”
+ LOCAL lclsys16,lcprogram,lcpath&& 定义三个局部变量
+ lcsys16=sys(16) && 返回执行程序文件名（即本程序文件名）、路径、盘符及字符串“ PROCEDURE SETPATH ”，
+ && 并把返回值存入变量 lclsys16 。
+ ? lcsys16 && 显示存入变量 lclsys16 内的内容，即：文件名、路径、盘符及字符串“ PROCEDURE SETPATH ”。
+ wait wind " 显示程序所在的全部路径及程序名 "&& 暂定，以便观察，按任意键继续。
+ 
+ lcprogram=substr(lcsys16,at(":",lcsys16)-1)&& 去掉盘符前面的字符串：“ PROCEDURE SETPATH ”，并保存在变量内。
+ ? lcprogram && 显示程序所在的盘符、路径及程序名
+ wait wind " 显示程序所在的全部路径及程序名，并去掉盘符前面的字符串。 "&& 暂定，以便观察，按任意键继续。
+ 
+ lcpath=left(lcprogram,rat("\",lcprogram)-1)&& 截取盘符和路径，去掉程序文件名和钭扛“ \ ”，并存入变量。
+ ? lcpath && 显示此路径。
+ wait wind " 显示程序所在的盘符和路径，并去掉程序名 "&& 暂定，以便观察，按任意键继续。
+ 
+ *lcpath=left(lcprogram,rat("\",lcprogram)-1)
+ *CD &lcpath && 进入此路径。
+ set defa to left(lcprogram,rat("\",lcprogram)-1)&& 将此目录设成 VFP 的默认目录，而不是指定目录。
+ && 若设成默认目录，此目录将存入 Windows 系统的注册表内，使 VFP 重新启动
+ && 也能进入此目录。而指定目录在重启 VFP 后要重新设置此目录。
+ 
+ CD left(lcprogram,rat("\",lcprogram)-1)&& 进入此路径。
+ ? set("path") && 显示进入后的当前路径，可见并未改为指定目录，它仍为先前的目录。
+ wait wind " 显示当前路径 " && 暂定，以便观察，按任意键继续。
+ 
+ set path to &lcpath && 。将 VFP 的默认目录更改为指定目录，而不改变默认目录。
+ ? set("path") && 显示当前的盘符和路径，并已设置为指定目录。
+ wait wind " 显示程序所在的盘符和路径，并已设置为指定目录 "&& 暂定，以便观察，按任意键继续。
+ 
+ ?sys(5)+sys(2003) && 显示当前的盘符和路径。
+ 
+ SET path to Progs,Forms,Menus,Datas,Graphics,Reports && 设置在指定目录下的捜索目录。
+ ? set("path") && 显示设置好的捜索目录
+ wait wind " 设置搜查路径 " && 暂定，以便观察，按任意键继续。
+ clea all && 从内存释放所有变量，若无此句就要犯宏代换函数递归的错误。这是可把 set path to home() 语句打开。
+ENDFUNC && 函数结束
