@@ -38,8 +38,9 @@ public class PayServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ReviewService rs = new ReviewService();
 		PayService ps = new PayService();
-		PrintWriter pWriter = response.getWriter();
 		response.setCharacterEncoding("utf-8");
+		PrintWriter pWriter = response.getWriter();
+		
 		if(request.getParameter("name")==null){
 			
 			
@@ -60,7 +61,7 @@ public class PayServlet extends HttpServlet {
 				pays.add(pay);
 			}
 			ps.add(pays);
-			pWriter.print(String.format("successful!!! fee sum:%f",sum));
+			pWriter.print(String.format("提取成功，共提取:%f",sum));
 		}
 		
 	}

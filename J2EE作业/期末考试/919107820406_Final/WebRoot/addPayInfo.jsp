@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
      <form action="<%=path %>/pay" method="get" id="form">
-     <table border="1" width="600" id = "ReviewT"> 
+     <table border="1" width="400" id = "ReviewT"> 
         <tr>
           <td align = "center">姓名</td>
           <td align = "center"><input type="text" name="name" value=""></td>
@@ -36,12 +36,26 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <td align = "center"><input type="text" name="bankNumber" value=""></td>
         </tr>
         <tr>
-        <input type="submit" value="确定">
+        <input type="button" onclick="mysubmit()" value="确定">
         </tr>
         </table>
      </form>
      <script>
-     
+   		function mysubmit(){
+        	$.ajax({
+	             type: "get",
+	             url: "<%=path%>/pay",
+	             data: {
+		             "name":$("input[name=name]").val(),
+		             "bankNumber":$("input[name=bankNumber]").val()
+	             },
+	             dataType: "text",
+	             success:function(data){
+	             	alert(data);
+	             	window.location.href="<%=path%>/manageReviewByPage.jsp";
+	             }
+	         	});
+        }
      </script>
   </body>
 </html>
