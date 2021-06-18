@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <script src="my.js"></script>
+    <link rel="stylesheet" href="my.css" />
+    <title>XX的个人页面-diet</title>
+    <meta name="description" content="XX的个人页面">
+  </head>
+  <body> 
+    <div>
+      <main>
+        <div class="width_100" style="border-bottom:1px solid #4a4a4a;margin-top:24px;" id="navbar">
+          <div>
+            <div class="flex_row d-flex">
+              <div class="flex_shrink" style="margin-left: 120px;width:25%"></div>
+              <div class="flex_shrink" style="margin-bottom: 0;width:75%;">          
+                <div class="d-flex width_100">
+                  <div class="d-flex">
+                    <a class="bar_item" href="hobby.html">
+                      <img style="background-image: url(img/logo.png);background-position: 0px -60px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                      兴趣爱好
+                      <span class="counter">5</span>
+                    </a>
+                    <a aria-current="page" class="bar_item_selected" href="diet.html">
+                      <img style="background-image: url(img/logo.png);background-position: -112px -30px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                      饮食
+                      <span class="counter">4</span>
+                    </a>
+                    <a class="bar_item" href="sports.html">
+                      <img style="background-image: url(img/logo.png);background-position: -111px -90px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                      体育
+                      <span class="counter">6</span>
+                    </a>
+                      <a class="bar_item" href="edu_cul.html">
+                      <img style="background-image: url(img/logo.png);background-position: 0px -30px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                        文化和教育
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="margin_l8 flex_row d-flex">
+            <div class="flex_shrink padding_8" id="left">
+              <div style="position: relative;top:10%;">
+                <div class="clearfix d-flex d_block">
+                  <div class="width_100">
+                    <a href="img/头像.jpeg">
+                      <img style="height:auto;border-radius: 50%;overflow:hidden;vertical-align: middle;" width="260" height="260" class="width_100" src="img/头像.jpeg" />
+                    </a>
+                  </div>
+                  <div class="margin_13 width_100">
+                    <h1>
+                      <span class="nickname">
+                        XX
+                      </span>
+                    </h1>
+                  </div>
+                </div>
+                <div class="d-flex flex_column">
+                  <a class="btn width_100 d_block" href="javascript:void(0)">上传头像</a>  
+                  <div class="d-flex flex_column d_block">
+                    <table class="info-table" style="margin:20px 0 0 0">
+                      <tr><td>学号</td><td>XXXXXXXXXXXX</td></tr>
+                    </table>
+                    <table class="info-table">
+                      <tr><td>班级</td><td>XXXXXXXXXX</td></tr>
+                    </table>
+                    <table class="info-table">
+                      <tr><td>学校</td><td>南京理工大学</td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="padding_8" id="right"> 
+              <div style="position:relative;">
+                <div style="margin-top: 24px;">
+                  <div>
+                    <h2 style="margin-left:45px;margin-bottom: 10px">
+                      <span >My Favorate</span>
+                    </h2>
+                      <ol class="tag_ol d-flex">
+                      <li class="tag_li">
+                        <div class="box">
+                          <div class="content_li">
+                            <div class="tag_img">
+                                <img src="img/饮食/西红柿炒鸡蛋.jpg">
+                            </div>
+                            <div class="tag_text">
+                              <div>
+                                  <a href="https://baike.baidu.com/item/%E8%A5%BF%E7%BA%A2%E6%9F%BF%E7%82%92%E9%B8%A1%E8%9B%8B" class="text_color_blue">
+                                    <span class="text_bold">西红柿炒鸡蛋</span>
+                                  </a>
+                              </div>
+                              <p class="margin_p text_color_gray">
+                                西红柿炒鸡蛋是以西红柿，鸡蛋为主料制作的家常菜。味道酸甜可口，特别下饭。色泽鲜艳，酸甜爽口，口感爽滑，色香味浓，增加食欲。
+                              </p>
+                              <span style="position:relative;bottom: -10px;">
+                                推荐指数
+                                <div class="radius" style="margin-left: 10px;"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tag_li">
+                        <div class="box">
+                          <div class="content_li">
+                            <div class="tag_img">
+                                <img src="img/饮食/胡萝卜炒西兰花.png">
+                            </div>
+                            <div class="tag_text">
+                              <div>
+                                  <a href="https://baike.baidu.com/item/%E8%83%A1%E8%90%9D%E5%8D%9C%E7%82%92%E8%A5%BF%E5%85%B0%E8%8A%B1" class="text_color_blue">
+                                    <span class="text_bold">胡萝卜炒西兰花</span>
+                                  </a>
+                              </div>
+                              <p class="margin_p text_color_gray">
+                                吃腻了大鱼大肉,不如来点清新爽口的蔬菜。胡萝卜炒西兰花西兰花营养丰富,含<a target="_blank" class="link" href="https://baike.baidu.com/item/%E8%9B%8B%E7%99%BD%E8%B4%A8/309120">蛋白质</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E7%B3%96/898629">糖</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E8%84%82%E8%82%AA/85926">脂肪</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E7%BB%B4%E7%94%9F%E7%B4%A0/161385">维生素</a>和<a target="_blank" class="link" href="https://baike.baidu.com/item/%E8%83%A1%E8%90%9D%E5%8D%9C%E7%B4%A0">胡萝卜素</a>,营养成份位居同类蔬菜之首。
+                              </p>
+                              <span style="position:relative;bottom: -10px;">
+                                推荐指数
+                                <div class="radius" style="margin-left: 10px;"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tag_li">
+                        <div class="box">
+                          <div class="content_li">
+                            <div class="tag_img">
+                                <img src="img/饮食/螺蛳粉.jpg">
+                            </div>
+                            <div class="tag_text">
+                              <div>
+                                  <a href="https://baike.baidu.com/item/%E8%9E%BA%E8%9B%B3%E7%B2%89" class="text_color_blue">
+                                    <span class="text_bold">螺蛳粉</span>
+                                  </a>
+                              </div>
+                              <p class="margin_p text_color_gray">
+                                螺蛳粉中富含<a target="_blank" class="link" href="https://baike.baidu.com/item/%E7%A2%B3%E6%B0%B4%E5%8C%96%E5%90%88%E7%89%A9/88328" >碳水化合物</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E8%83%B6%E8%B4%A8">胶质</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E8%84%91%E7%A3%B7%E8%84%82/4442099" >脑磷脂</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E7%BA%A4%E7%BB%B4%E7%B4%A0/775570">纤维素</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E5%8D%B5%E7%A3%B7%E8%84%82/3638443">卵磷脂</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E8%9B%8B%E7%99%BD%E8%B4%A8/309120">蛋白质</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E8%83%A1%E8%90%9D%E5%8D%9C%E7%B4%A0">胡萝卜素</a>、各种<a target="_blank" class="link" href="https://baike.baidu.com/item/%E7%BB%B4%E7%94%9F%E7%B4%A0/161385">维生素</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E9%93%81/29586" >铁</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E9%92%99/720818">钙</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E7%A3%B7/722011">磷</a>等多种营养成分，既可以一饱口福，又可以保健养生。
+                              </p>
+                              <span style="position:relative;bottom: -10px;">
+                                推荐指数
+                                <div class="radius" style="margin-left: 10px;"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tag_li">
+                        <div class="box">
+                          <div class="content_li">
+                            <div class="tag_img">
+                                <img src="img/饮食/宫保鸡丁.jpg">
+                            </div>
+                            <div class="tag_text">
+                              <div>
+                                  <a href="https://baike.baidu.com/item/%E5%AE%AB%E4%BF%9D%E9%B8%A1%E4%B8%81/1570" class="text_color_blue">
+                                    <span class="text_bold">宫保鸡丁</span>
+                                  </a>
+                              </div>
+                              <p class="margin_p text_color_gray">
+                                宫保鸡丁选用鸡肉为主料，佐以花生米、辣椒等辅料烹制而成；红而不辣、辣而不猛、香辣味浓、肉质滑脆；其入口鲜辣，鸡肉的鲜嫩可以配合花生的香脆。
+                              </p>
+                              <span style="position:relative;bottom: -10px;">
+                                推荐指数
+                                <div class="radius" style="margin-left: 10px;"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                                <div class="radius"></div>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ol>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

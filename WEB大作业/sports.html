@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <script src="my.js"></script>
+    <link rel="stylesheet" href="my.css" />
+  <!--       <link crossorigin="anonymous" media="all" integrity="sha512-B/jj6qcXmAwGUh/FG7mfpfFSb0lW1UpGiufFhzIeC+u3lXE5VDEJQzVxZ3gquw8xjZBNQ6CgWDSgCgjRzqPUgw==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-07f8e3eaa717980c06521fc51bb99fa5.css" />
+        <link crossorigin="anonymous" media="all" integrity="sha512-6GPOjKyUzyBU9glXiYr5VayiMkmbK4LqbAjTke98cFsYGAMpdfhoyecnPX/K+2It8hZkRsp26FN+CRtyEJ/oGA==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-e863ce8cac94cf2054f60957898af955.css" />
+        
+        <link crossorigin="anonymous" media="all" integrity="sha512-f2KfubpZ4Eg8nwikR8+K0ND4R0evjnYPqjv8dQHShuiypc3SDPYKakEP9hU33tvkjTkCFkMsEjvnXZScK78Khw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-7f629fb9ba59e0483c9f08a447cf8ad0.css" />   -->
+    <title>XX的个人页面-sports</title>
+    <meta name="description" content="XX的个人页面">
+  </head>
+  <body> 
+    <div>
+      <main>
+        <div style="position:fixed;right:0px;top:150px">
+          <p><span style="display:inline-block;width: 20px;height: 20px;border-radius: 50%;background-color: green;"></span>优秀</p>
+          <p><span style="display:inline-block;width: 20px;height: 20px;border-radius: 50%;background-color: yellow;"></span>良好</p>
+          <p><span style="display:inline-block;width: 20px;height: 20px;border-radius: 50%;background-color: red;"></span>及格</p>
+        </div>
+        <div class="width_100" style="border-bottom:1px solid #4a4a4a;margin-top:24px;" id="navbar">
+          <div>
+            <div class="flex_row d-flex">
+              <div class="flex_shrink" style="margin-left: 120px;width:25%"></div>
+              <div class="flex_shrink" style="margin-bottom: 0;width:75%;">          
+                <div class="d-flex width_100">
+                  <div class="d-flex">
+                    <a class="bar_item" href="hobby.html">
+                      <img style="background-image: url(img/logo.png);background-position: 0px -60px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                      兴趣爱好
+                      <span class="counter">5</span>
+                    </a>
+                    <a class="bar_item" href="diet.html">
+                      <img style="background-image: url(img/logo.png);background-position: -112px -30px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                      饮食
+                      <span class="counter">4</span>
+                    </a>
+                    <a class="bar_item_selected" href="sports.html">
+                      <img style="background-image: url(img/logo.png);background-position: -111px -90px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                      体育
+                      <span class="counter">6</span>
+                    </a>
+                      <a class="bar_item" href="edu_cul.html">
+                      <img style="background-image: url(img/logo.png);background-position: 0px -30px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                        文化和教育
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="margin_l8 flex_row d-flex">
+            <div class="flex_shrink padding_8" id="left">
+              <div style="position: relative;top:10%;">
+                <div class="clearfix d-flex d_block">
+                  <div class="width_100">
+                    <a href="img/头像.jpeg">
+                      <img style="height:auto;border-radius: 50%;overflow:hidden;vertical-align: middle;" width="260" height="260" class="width_100" src="img/头像.jpeg" />
+                    </a>
+                  </div>
+                  <div class="margin_13 width_100">
+                    <h1>
+                      <span class="nickname">
+                        XX
+                      </span>
+                    </h1>
+                  </div>
+                </div>
+                <div class="d-flex flex_column">
+                  <a class="btn width_100 d_block" href="javascript:void(0)">上传头像</a>  
+                  <div class="d-flex flex_column d_block">
+                    <table class="info-table" style="margin:20px 0 0 0">
+                      <tr><td>学号</td><td>XXXXXXXXXXXX</td></tr>
+                    </table>
+                    <table class="info-table">
+                      <tr><td>班级</td><td>XXXXXXXX</td></tr>
+                    </table>
+                    <table class="info-table">
+                      <tr><td>学校</td><td>南京理工大学</td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="padding_8" id="right"> 
+              <div style="position:relative;">
+                <div style="margin-top: 24px;">
+                  <div>
+                    <h2 style="margin-left:45px;margin-bottom: 10px">
+                      <span >我的体育测试成绩</span>
+                    </h2>
+                      <ol class="tag_ol d-flex">
+                      <li class="tag_li">
+                        <div class="box">
+                          <div class="content_li">
+                            <div class="tag_img" style="min-width:100px;">
+                                <span class="text_bold" style="display: inline-block;margin-top: 10px;">肺活量(al)</span>
+                            </div>
+                            <div class="tag_text d-flex flex_row">
+                              <table class="s_table">
+                                <tr><td>我的成绩</td></tr><tr><td>2100</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr><td>及格成绩</td></tr><tr><td>2050</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr style="background:red;"><td>等级划分</td></tr><tr><td>及格</td></tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tag_li">
+                        <div class="box">
+                          <div class="content_li">
+                            <div class="tag_img" style="min-width:100px;">
+                                <span class="text_bold" style="display: inline-block;margin-top: 10px;">50米跑(秒)</span>
+                            </div>
+                            <div class="tag_text d-flex flex_row">
+                              <table class="s_table">
+                                <tr><td>我的成绩</td></tr><tr><td>8.2</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr><td>及格成绩</td></tr><tr><td>10.2</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr style="background:yellow;"><td>等级划分</td></tr><tr><td>良好</td></tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tag_li">
+                        <div class="box">
+                          <div class="content_li">
+                            <div class="tag_img" style="min-width:100px;">
+                                <span class="text_bold" style="display: inline-block;margin-top: 10px;">坐位体前屈(cm)</span>
+                            </div>
+                            <div class="tag_text d-flex flex_row">
+                              <table class="s_table">
+                                <tr><td>我的成绩</td></tr><tr><td>20.5</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr><td>及格成绩</td></tr><tr><td>6</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr style="background:yellow;"><td>等级划分</td></tr><tr><td>良好</td></tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tag_li">
+                        <div class="box">
+                          <div class="content_li">
+                            <div class="tag_img" style="min-width:100px;">
+                                <span class="text_bold" style="display: inline-block;margin-top: 10px;">立定跳远(cm)</span>
+                            </div>
+                            <div class="tag_text d-flex flex_row">
+                              <table class="s_table">
+                                <tr><td>我的成绩</td></tr><tr><td>182</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr><td>及格成绩</td></tr><tr><td>154</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr style="background:yellow;"><td>等级划分</td></tr><tr><td>良好</td></tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tag_li">
+                        <div class="box">
+                          <div class="content_li">
+                            <div class="tag_img" style="min-width:100px;">
+                                <span class="text_bold" style="display: inline-block;margin-top: 10px;">一分钟仰卧起坐(个)</span>
+                            </div>
+                            <div class="tag_text d-flex flex_row">
+                              <table class="s_table">
+                                <tr><td>我的成绩</td></tr><tr><td>30</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr><td>及格成绩</td></tr><tr><td>26</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr style="background:red;"><td>等级划分</td></tr><tr><td>及格</td></tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tag_li">
+                        <div class="box">
+                          <div class="content_li">
+                            <div class="tag_img" style="min-width:100px;">
+                                <span class="text_bold" style="display: inline-block;margin-top: 10px;">800米跑(分*秒)</span>
+                            </div>
+                            <div class="tag_text d-flex flex_row">
+                              <table class="s_table">
+                                <tr><td>我的成绩</td></tr><tr><td>3′30″</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr><td>及格成绩</td></tr><tr><td>4′32″</td></tr>
+                              </table>
+                              <table class="s_table">
+                                <tr style="background:green;"><td>等级划分</td></tr><tr><td>优秀</td></tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ol>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

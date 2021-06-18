@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <script src="my.js"></script>
+    <link rel="stylesheet" href="my.css" />
+    <title>XX的个人页面-education and culture</title>
+    <meta name="description" content="XX的个人页面">
+  </head>
+  <body> 
+    <div>
+      <main>
+        <div class="width_100" style="border-bottom:1px solid #4a4a4a;margin-top:24px;" id="navbar">
+          <div>
+            <div class="flex_row d-flex">
+              <div class="flex_shrink" style="margin-left: 120px;width:25%"></div>
+              <div class="flex_shrink" style="margin-bottom: 0;width:75%;">          
+                <div class="d-flex width_100">
+                  <div class="d-flex">
+                    <a class="bar_item" href="hobby.html">
+                      <img style="background-image: url(img/logo.png);background-position: 0px -60px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                      兴趣爱好
+                      <span class="counter">5</span>
+                    </a>
+                    <a class="bar_item" href="diet.html">
+                      <img style="background-image: url(img/logo.png);background-position: -112px -30px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                      饮食
+                      <span class="counter">4</span>
+                    </a>
+                    <a class="bar_item" href="sports.html">
+                      <img style="background-image: url(img/logo.png);background-position: -111px -90px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;">
+                      体育
+                      <span class="counter">6</span>
+                    </a>
+                      <a class="bar_item_selected" href="#edu">
+                      <img style="background-image: url(img/logo.png);background-position: 0px -30px;background-color: transparent;background-size: 160px 110px;width: 21px;height: 20px;border: 0;margin-bottom: -3px;"> 
+                        文化和教育
+                    </a>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="margin_l8 flex_row d-flex">
+            <div class="flex_shrink padding_8" id="left">
+              <div style="position: relative;top:10%;">
+                <div class="clearfix d-flex d_block">
+                  <div class="width_100">
+                    <a href="img/头像.jpeg">
+                      <img style="height:auto;border-radius: 50%;overflow:hidden;vertical-align: middle;" width="260" height="260" class="width_100" src="img/头像.jpeg" />
+                    </a>
+                  </div>
+                  <div class="margin_13 width_100">
+                    <h1>
+                      <span class="nickname">
+                        XX
+                      </span>
+                    </h1>
+                  </div>
+                </div>
+                <div class="d-flex flex_column">
+                  <a class="btn width_100 d_block" href="javascript:void(0)">上传头像</a>  
+                  <div class="d-flex flex_column d_block">
+                    <table class="info-table" style="margin:20px 0 0 0">
+                      <tr><td>学号</td><td>XXXXXXXXXXXX</td></tr>
+                    </table>
+                    <table class="info-table">
+                      <tr><td>班级</td><td>XXXXXXXXXX</td></tr>
+                    </table>
+                    <table class="info-table">
+                      <tr><td>学校</td><td>南京理工大学</td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="padding_8" id="right"> 
+              <div style="position:relative;">
+                <div style="margin-top: 24px;">
+                  <div>
+                    <div class="d-flex flex_row">
+                      <a class="btn d_block a_no" href="#culture" style="width:30%;margin:10px 80px;">赣文化</a>
+                      <a class="btn d_block a_no" href="#edu" style="width:30%;margin:10px 80px;">教育</a>
+                    </div>
+                    <div style="margin:10px 50px;width:100%;height:30px;overflow:hidden;">
+                      <div id="culture" class="d-flex flex_row" style="width:100%;height:30px;">
+                        <span class="edu_span">
+                          <input type="radio" name="selected" />赣地人文
+                          <a href="#people"></a>
+                        </span>
+                        <span class="edu_span">
+                          <input type="radio" name="selected" />陶瓷文化
+                          <a href="#china" style="visibility:0"></a>
+                        </span>
+                        <span class="edu_span">
+                          <input type="radio" name="selected" />&emsp;赣菜&emsp;
+                          <a href="#dish"></a>
+                        </span>
+                      </div>                      
+                      <div id="edu" class="d-flex flex_row" style="width:100%;height:30px;">
+                        <span class="edu_span">
+                          <input type="radio" name="selected" />高等教育
+                          <a href="#higher"></a>
+                        </span>
+                        <span class="edu_span">
+                          <input type="radio" name="selected" />中等教育
+                          <a href="#secondary" style="visibility:0"></a>
+                        </span>
+                        <span class="edu_span">
+                          <input type="radio" name="selected" />初等教育
+                          <a href="#primary"></a>
+                        </span>
+                      </div>
+                    </div>
+                      <div style="width: 100%;height:190px;overflow:hidden;margin-top: 20px;">
+                        <ol class="tag_ol d-flex">
+                          <li class="tag_li" id="people">
+                            <div class="box">
+                              <div class="content_li">
+                            <div class="tag_img" style="min-width:100px;">
+                                <span class="text_bold" style="display: inline-block;margin-top: 50px;text-align: center;">赣地人文</span>
+                            </div>
+                                <div class="tag_text" style="height:140px;"> 
+                                  <p class="margin_p text_color_gray">
+                                    江西素有文章节义之邦的美誉，赣文化的精髓所在，核心奥义为：“文、章、节、义”。可以说自古以来文章与节义并重，不仅是对赣文化主体精神的评判之一，而且是江西人士遵循的人生信条和追求目标。元代至明初，江西文人承宋代之余烈，江西所产的著名文化名人有<a target="_blank" class="link" href="https://baike.baidu.com/item/%E9%99%B6%E6%B8%8A%E6%98%8E">陶渊明</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E6%99%8F%E6%AE%8A">晏殊</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E6%AC%A7%E9%98%B3%E4%BF%AE">欧阳修</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E6%9B%BE%E5%B7%A9">曾巩</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E7%8E%8B%E5%AE%89%E7%9F%B3">王安石</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E9%BB%84%E5%BA%AD%E5%9D%9A">黄庭坚</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E9%99%86%E4%B9%9D%E6%B8%8A">陆九渊</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E6%9D%A8%E4%B8%87%E9%87%8C">杨万里</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E6%96%87%E5%A4%A9%E7%A5%A5/183780" >文天祥</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E8%A7%A3%E7%BC%99">解缙</a>、<a target="_blank" class="link" href="https://baike.baidu.com/item/%E6%B1%A4%E6%98%BE%E7%A5%96">汤显祖</a>等等，亦可称得上超超玄箸矣！这样一个在中国文化极盛之期取得最高成就的省份应该占据其中之一席。
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="tag_li" id="china">
+                            <div class="box">
+                              <div class="content_li">
+                            <div class="tag_img" style="min-width:100px;">
+                                <span class="text_bold" style="display: inline-block;margin-top: 50px;text-align: center;">陶瓷文化</span>
+                            </div>
+                                <div class="tag_text" style="height:140px;overflow-y: scroll;">
+                                  <p class="margin_p text_color_gray">
+                                    &emsp;&emsp;景德镇是以盛产瓷器而闻名于世的，有着瓷都的美誉。从汉代起，景德镇就开始了制瓷历史。自宋代起，景德镇瓷器就成了皇家宫廷的御用瓷器。明代景德镇所产的瓷器，数量大，品种多，质量好，销路广，宋应星的《天工开物》在叙述当时景德镇瓷器的产量时是这样说，“合并数郡，不敌江西饶郡（指景德镇），若夫中华四裔，驰名猎取者，皆饶郡浮梁景德镇之产也。”
+                                  </p>
+                                  <p class="margin_p text_color_gray">
+                                  <p class="margin_p text_color_gray">
+                                    &emsp;&emsp;景德镇瓷器在近代有了长足的发展和提高，在近代全面继承历史传统特色的基础上有了创新和发展。而今，瓷器已成为江西在全国乃至全世界最具识别性的风物之一，千年以来形成的瓷文化更可谓是江西文化里精致华美的一章。
+                                  </p>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="tag_li" id="dish">
+                            <div class="box">
+                              <div class="content_li">
+                            <div class="tag_img" style="min-width:100px;">
+                                <span class="text_bold" style="display: inline-block;margin-top: 50px;text-align: center;">&emsp;赣菜&emsp;</span>
+                            </div>
+                                <div class="tag_text" style="height:140px;">
+                                  <p class="margin_p text_color_gray">
+                                    赣菜作为中国美食文化中的一朵奇葩，有着数千年饮食文化的积淀。《<a target="_blank" class="link" href="https://baike.baidu.com/item/%E5%90%8E%E6%B1%89%E4%B9%A6/1949780" >后汉书</a>》中的《豫章记》称江西“嘉蔬精稻，擅味八方”。唐初，<a target="_blank" class="link" href="https://baike.baidu.com/item/%E7%8E%8B%E5%8B%83">王勃</a>赴滕王举办的盛宴，兴奋之余赞江西“物华天宝，人杰地灵”。明代<a target="_blank" class="link" href="https://baike.baidu.com/item/%E8%A2%81%E6%9E%9A">袁枚</a>的《<a target="_blank" class="link" href="https://baike.baidu.com/item/%E9%9A%8F%E5%9B%AD%E9%A3%9F%E5%8D%95/3082399" >随园食单</a>》中曾记载江西名菜“<a target="_blank" class="link" href="https://baike.baidu.com/item/%E7%B2%89%E8%92%B8%E8%82%89/1683228" >粉蒸肉</a>”。今天的赣菜，正是在继承历代“文人菜”基础上发展而成的乡土味极浓的“家乡菜”。
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="tag_li" id="higher">
+                            <div class="box">
+                              <div class="content_li">
+                                <div class="tag_img">
+                                    <img src="img/教育/大学.jpg">
+                                </div>
+                                <div class="tag_text">
+                                  <div>
+                                    <span class="text_bold text_color_blue">南京理工大学</span>
+                                  </div>
+                                  <p class="margin_p text_color_gray">
+                                    本人就读于<a href="http://www.njust.edu.cn/" target="_blank" class="link">南京理工大学</a>,19级本科生，专业为计算机科学与技术。
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="tag_li" id="secondary">
+                            <div class="box">
+                              <div class="content_li">
+                                <div class="tag_img">
+                                    <img src="img/教育/中学.png">
+                                </div>
+                                <div class="tag_text">
+                                  <div>
+                                    <span class="text_bold text_color_blue">江西省高安中学</span>
+                                  </div>
+                                  <p class="margin_p text_color_gray">
+                                    本人于2016-2019年于<a href="http://www.jxgazx.com/" target="_blank" class="link">江西省高安中学</a>理科班完成高中学业。
+                                    于2013-2016年于江西省高安中学（现<a href="https://baike.baidu.com/item/%E9%AB%98%E5%AE%89%E5%B8%82%E5%90%B4%E6%9C%89%E8%AE%AD%E5%AE%9E%E9%AA%8C%E5%AD%A6%E6%A0%A1/49966293?fr=aladdin" target="_blank" class="link">江西省吴有训实验中学</a>）完成初中学业。
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="tag_li" id="primary">
+                            <div class="box">
+                              <div class="content_li">
+                                <div class="tag_img">
+                                    <img src="img/教育/小学.jpg">
+                                </div>
+                                <div class="tag_text">
+                                  <div>
+                                      <span class="text_bold text_color_blue">高安四小</span>
+                                  </div>
+                                  <p class="margin_p text_color_gray">
+                                    本人2007-2013于<a href="https://baike.baidu.com/item/%E9%AB%98%E5%AE%89%E7%AC%AC%E5%9B%9B%E5%B0%8F%E5%AD%A6" target="_blank" class="link">高安四小</a>完成小学学业。
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ol>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.nickname{
+    display: block;
+    font-size: 22px;
+    font-weight: 600px;
+    text-align: center;
+}
+.info-table{
+    width: 100%;
+    margin: 10px 0 0 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    border: 1px white solid;
+}
+.info-table td{
+    height: 30px;
+    text-align: center;
+}
+.s_table td{
+    text-align: center;
+    width: 300px;
+}
+.s_table tr:nth-child(2n+1){
+    background:#2b2b2b  ;
+}
+.s_table{
+    margin: 0 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    border: 1px white solid;
+    overflow: hidden;
+}
+.counter {
+    display: inline-block;
+    min-width: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #c9d1d9;
+    text-align: center;
+    background-color: #30363d;
+    border-radius: 50%;
+}
+
+.tag_li {
+    margin-bottom: 16px;
+    padding-right: 8px;
+    padding-left: 8px;
+    width: 90%;
+    list-style: none;
+}
+.tag_li:hover {
+    width: 100%;
+}
+.edu_span{
+    position: relative;
+    width: 33%;
+}
+.edu_span a{
+    display: inline-block;
+    width: 12px;
+    height: 12.5px;
+    position:relative;
+    left:-83.5px;
+    border-radius: 50%;
+}
+.edu_span a:hover{
+    background-color: #f9826c;
+}
+.a_no:hover{
+    text-decoration: none;
+    background-color: #c9d1d9;
+    color: #0d1117;
+}
+.link{
+    color: white;
+    font-style: italic;
+    text-decoration:underline;
+}
+.tag_ol {
+    flex-wrap: wrap;
+    margin: 0 24px -8px -8px;
+}
+.tag_img img{
+    width: 150px;
+    height:auto;
+}
+.tag_text{
+    margin-left: 20px;
+    /*position: relative;*/
+}
+.content_li{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.text_bold{
+    font-weight: bold;
+    font-size: 20px;
+}
+.text_color_blue{
+    color: #58a6ff;
+}
+.text_color_gray{
+    color: #8b949e;
+}
+.margin_p{
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+.margin_auto{
+    margin: auto;
+}
+.radius{
+    background-color: yellow;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    bottom: -2px;
+}
+.box{
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding:16px ;
+    width: 100%;
+}
+.box:hover{
+    background-color: #30363d;
+}
+.btn{
+    color: #c9d1d9;
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    text-align: center;
+    padding: 5px 16px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    border-radius: 15px;
+}
+#enter:hover{
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+}
+.container{
+    width: 1180px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.width_100{
+    width: 100%;
+}
+.padding_8{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.margin_13{
+    margin-bottom: 13px;
+    margin-top: 13px;
+}
+.margin_l8{
+    margin-right: 8px;
+    margin-left: -8px;
+}
+.d-flex {
+    display: flex;
+}
+.flex_row{
+    flex-direction: row;
+}
+.flex_column{
+    flex-direction: column;
+}
+.flex_shrink{
+    flex-shrink: 0;
+}
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.d_block{
+    display: block!important;
+}
+.bar_item{
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #8b949e;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+}
+.bar_item:hover{
+    color: #c9d1d9;
+    text-decoration: none;
+    border-bottom-color: #6e7681;
+}
+.bar_item_selected{
+    font-weight: 600;
+    color: #c9d1d9;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    border-bottom: 2px solid  #f9826c;
+}
+.bar_item_selected:hover{
+    text-decoration: none;
+}
+#left{
+    width: 25%;
+}
