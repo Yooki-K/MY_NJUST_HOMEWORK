@@ -1,5 +1,5 @@
 .data
-data: .word 1,0,1
+data: .word 1,2,1
 sp: .asciiz " "
 enter: .asciiz "\n"
 err: .asciiz "calculate error!!!"
@@ -75,8 +75,9 @@ b end
 type1:
 ori $19,$19,1
 beqz $17,type3
-sub $20,$0,$16
-div $20,$8,$17
+sub $20,$0,$17
+sll $8,$16,1
+div $20,$20,$8
 move $21,$20
 b end
 type2:
