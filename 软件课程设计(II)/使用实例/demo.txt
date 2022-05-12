@@ -1,0 +1,19 @@
+void myPrint(int i,int j){
+    return i+j;
+}
+int main(){
+    int n = 5,m = 3;
+    int pp[3]={1,2,3};
+    int*p=&n;
+    bool isOK = true;
+    n+=(3*m;
+    myPrint(n,m)
+    double xs = 156.154;
+    double d=0.123E+5;
+    double fs=( 5+9i )+5;
+    string s = "hello \"world!";
+    char c = s[1;
+    if(c == 'a'&&(n==m || isOK)){
+        n++;
+    }
+    return 0;

@@ -1,0 +1,14 @@
+K:S E T F R Q
+S:S
+sigma:+ * ( ) const - /
+S->E{print(E.val)}
+E->E + T{E.val:=E.val+T.val}
+E->T{E.val:=T.val}
+T->T * Q{T.val:=T.val*Q.val}
+T->Q{T.val:=Q.val}
+Q->Q / R{Q.val:=Q.val/R.val}
+Q->R{Q.val:=R.val}
+R->R - F{R.val:=R.val-F.val}
+R->F{R.val:=F.val}
+F->( E ){F.val:=E.val}
+F->const{F.val:=const.lexval}

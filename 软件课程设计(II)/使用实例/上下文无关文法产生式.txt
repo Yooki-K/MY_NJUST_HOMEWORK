@@ -1,0 +1,95 @@
+K:S' S define func_ret func_define paras block para const_add dv_op sv_op pre_op assigning_op exp logic_exp conjunction define_statement if_statement else_statement while_statement ret_statement for_statement func_call ids define_para valuation normal_statement exps id_add valuation_add para_add exp_add exps
+S:S'
+sigma:( ) [ ] ; , { } # + - * / & ^ && || | if else return for while void int double float char string ++ -- ~ # = < > <= >= != == $ id const
+S'->S
+S->$
+func_ret->void
+func_ret->define
+define->int
+define->double
+define->flout
+define->string
+define->char
+define->bool
+define->define *
+func_define->func_ret id ( paras ) { block }
+func_define->para ( paras ) { block }
+func_define->func_ret id ( ) { block }
+func_define->para ( ) { block }
+para->define id
+paras->para para_add
+para_add->, paras
+para_add->$
+assigning_op->=
+assigning_op->+=
+assigning_op->-=
+assigning_op->*=
+assigning_op->/=
+dv_op->>
+dv_op-><
+dv_op->==
+dv_op-><=
+dv_op->>=
+dv_op->!=
+dv_op->+
+dv_op->-
+dv_op->*
+dv_op->/
+dv_op->^
+dv_op->&
+dv_op->|
+sv_op->++
+sv_op->--
+pre_op->~
+define_statement->define valuation valuation_add ;
+define_statement->define_para ;
+define_para->define ids
+valuation->id assigning_op exp
+valuation->id [ const ] assigning_op { const const_add }
+valuation->id assigning_op { const const_add }
+const_add->, const const_add
+const_add->$
+valuation_add->, valuation valuation_add
+valuation_add->$
+exp->exp dv_op exp
+exp->exp sv_op
+exp->sv_op exp
+exp->pre_op exp
+exp->func_call
+exp->const
+exp->( exp )
+exp->id
+exp->id [ const ]
+exp->& id
+normal_statement->exp ;
+normal_statement->valuation ;
+normal_statement->func_call ;
+func_call->id ( ids )
+func_call->id ( )
+ids->id id_add
+id_add->, ids
+id_add->$
+for_statement->for ( define_statement logic_exp ; exp ) { block }
+if_statement->if ( logic_exp ) { block } else_statement
+if_statement->if ( logic_exp ) { block }
+else_statement->else { block }
+while_statement->while ( logic_exp ) { block }
+ret_statement->return exp ;
+conjunction->&&
+conjunction->||
+logic_exp->exps
+exps->exp exp_add
+exp_add->conjunction exps
+exp_add->$
+exp->exp conjunction exp
+block->$
+block->{ block }
+block->define_statement block
+block->if_statement block
+block->else_statement block
+block->for_statement block
+block->while_statement block
+block->ret_statement block
+block->normal_statement block
+S->func_define S
+S->define_statement S
