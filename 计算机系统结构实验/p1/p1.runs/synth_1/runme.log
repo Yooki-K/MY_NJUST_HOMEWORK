@@ -1,0 +1,570 @@
+
+*** Running vivado
+    with args -log single_cycle_cpu_display.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle_cpu_display.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source single_cycle_cpu_display.tcl -notrace
+Command: synth_design -top single_cycle_cpu_display -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1436 
+WARNING: [Synth 8-6901] identifier 'rs_value' is used before its declaration [E:/6_single_cycle_cpu/single_cycle_cpu.v:116]
+WARNING: [Synth 8-6901] identifier 'rt_value' is used before its declaration [E:/6_single_cycle_cpu/single_cycle_cpu.v:116]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 749.738 ; gain = 181.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'single_cycle_cpu_display' [E:/6_single_cycle_cpu/single_cycle_cpu_display.v:8]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [E:/Xilinx2019/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1085]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (1#1) [E:/Xilinx2019/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1085]
+INFO: [Synth 8-6157] synthesizing module 'single_cycle_cpu' [E:/6_single_cycle_cpu/single_cycle_cpu.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inst_rom' [E:/6_single_cycle_cpu/inst_rom.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inst_rom' (2#1) [E:/6_single_cycle_cpu/inst_rom.v:9]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [E:/6_single_cycle_cpu/regfile.v:8]
+WARNING: [Synth 8-6014] Unused sequential element rf_reg[0] was removed.  [E:/6_single_cycle_cpu/regfile.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (3#1) [E:/6_single_cycle_cpu/regfile.v:8]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/6_single_cycle_cpu/alu.v:8]
+INFO: [Synth 8-6157] synthesizing module 'adder' [E:/6_single_cycle_cpu/adder.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (4#1) [E:/6_single_cycle_cpu/adder.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (5#1) [E:/6_single_cycle_cpu/alu.v:8]
+INFO: [Synth 8-6157] synthesizing module 'data_ram' [E:/6_single_cycle_cpu/data_ram.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'data_ram' (6#1) [E:/6_single_cycle_cpu/data_ram.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'single_cycle_cpu' (7#1) [E:/6_single_cycle_cpu/single_cycle_cpu.v:10]
+INFO: [Synth 8-6157] synthesizing module 'lcd_module' [E:/p1/p1/p1.runs/synth_1/.Xil/Vivado-3152-stu-4/realtime/lcd_module_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_module' (8#1) [E:/p1/p1/p1.runs/synth_1/.Xil/Vivado-3152-stu-4/realtime/lcd_module_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'single_cycle_cpu_display' (9#1) [E:/6_single_cycle_cpu/single_cycle_cpu_display.v:8]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[31]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[30]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[29]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[28]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[27]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[26]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[25]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[24]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[23]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[22]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[21]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[20]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[19]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[18]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[17]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[16]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[15]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[14]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[13]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[12]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[11]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[10]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[9]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[8]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[7]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[1]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 793.316 ; gain = 225.457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 811.188 ; gain = 243.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 811.188 ; gain = 243.328
+---------------------------------------------------------------------------------
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'cpu_clk_cg' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'cpu_clk_cg' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/6_single_cycle_cpu/single_cycle_cpu.xdc]
+CRITICAL WARNING: [Common 17-1548] Command failed: invalid command name "SET_PROPERTY"
+ [E:/6_single_cycle_cpu/single_cycle_cpu.xdc:12]
+Finished Parsing XDC File [E:/6_single_cycle_cpu/single_cycle_cpu.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/6_single_cycle_cpu/single_cycle_cpu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/single_cycle_cpu_display_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/single_cycle_cpu_display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 938.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 938.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 938.078 ; gain = 370.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 938.078 ; gain = 370.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 938.078 ; gain = 370.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 938.078 ; gain = 370.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 34    
+	                8 Bit    Registers := 128   
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input     40 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 14    
+	   3 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 65    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module single_cycle_cpu_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input     40 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+Module alu 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+Module data_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 128   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module single_cycle_cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[31][0]' (FDE) to 'cpu/rf_module/rf_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[30][0]' (FDE) to 'cpu/rf_module/rf_reg[28][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[29][0]' (FDE) to 'cpu/rf_module/rf_reg[28][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[28][0]' (FDE) to 'cpu/rf_module/rf_reg[26][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[27][0]' (FDE) to 'cpu/rf_module/rf_reg[26][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[26][0]' (FDE) to 'cpu/rf_module/rf_reg[24][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[25][0]' (FDE) to 'cpu/rf_module/rf_reg[24][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[24][0]' (FDE) to 'cpu/rf_module/rf_reg[22][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[23][0]' (FDE) to 'cpu/rf_module/rf_reg[22][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[22][0]' (FDE) to 'cpu/rf_module/rf_reg[20][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[21][0]' (FDE) to 'cpu/rf_module/rf_reg[20][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[20][0]' (FDE) to 'cpu/rf_module/rf_reg[18][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[19][0]' (FDE) to 'cpu/rf_module/rf_reg[18][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[18][0]' (FDE) to 'cpu/rf_module/rf_reg[16][0]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[17][0]' (FDE) to 'cpu/rf_module/rf_reg[16][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][0] )
+INFO: [Synth 8-3886] merging instance 'cpu/pc_reg[0]' (FDRE) to 'cpu/pc_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[31][1]' (FDE) to 'cpu/rf_module/rf_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[30][1]' (FDE) to 'cpu/rf_module/rf_reg[28][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[29][1]' (FDE) to 'cpu/rf_module/rf_reg[28][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[28][1]' (FDE) to 'cpu/rf_module/rf_reg[26][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[27][1]' (FDE) to 'cpu/rf_module/rf_reg[26][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[26][1]' (FDE) to 'cpu/rf_module/rf_reg[24][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[25][1]' (FDE) to 'cpu/rf_module/rf_reg[24][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[24][1]' (FDE) to 'cpu/rf_module/rf_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[23][1]' (FDE) to 'cpu/rf_module/rf_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[22][1]' (FDE) to 'cpu/rf_module/rf_reg[20][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[21][1]' (FDE) to 'cpu/rf_module/rf_reg[20][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[20][1]' (FDE) to 'cpu/rf_module/rf_reg[18][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[19][1]' (FDE) to 'cpu/rf_module/rf_reg[18][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[18][1]' (FDE) to 'cpu/rf_module/rf_reg[16][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[17][1]' (FDE) to 'cpu/rf_module/rf_reg[16][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/pc_reg[1] )
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[31][2]' (FDE) to 'cpu/rf_module/rf_reg[30][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[30][2]' (FDE) to 'cpu/rf_module/rf_reg[28][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[29][2]' (FDE) to 'cpu/rf_module/rf_reg[28][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[28][2]' (FDE) to 'cpu/rf_module/rf_reg[26][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[27][2]' (FDE) to 'cpu/rf_module/rf_reg[26][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[26][2]' (FDE) to 'cpu/rf_module/rf_reg[24][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[25][2]' (FDE) to 'cpu/rf_module/rf_reg[24][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[24][2]' (FDE) to 'cpu/rf_module/rf_reg[22][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[23][2]' (FDE) to 'cpu/rf_module/rf_reg[22][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[22][2]' (FDE) to 'cpu/rf_module/rf_reg[20][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[21][2]' (FDE) to 'cpu/rf_module/rf_reg[20][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[20][2]' (FDE) to 'cpu/rf_module/rf_reg[18][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[19][2]' (FDE) to 'cpu/rf_module/rf_reg[18][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[18][2]' (FDE) to 'cpu/rf_module/rf_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[17][2]' (FDE) to 'cpu/rf_module/rf_reg[16][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][2] )
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[31][3]' (FDE) to 'cpu/rf_module/rf_reg[30][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[30][3]' (FDE) to 'cpu/rf_module/rf_reg[28][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[29][3]' (FDE) to 'cpu/rf_module/rf_reg[28][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[28][3]' (FDE) to 'cpu/rf_module/rf_reg[26][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[27][3]' (FDE) to 'cpu/rf_module/rf_reg[26][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[26][3]' (FDE) to 'cpu/rf_module/rf_reg[24][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[25][3]' (FDE) to 'cpu/rf_module/rf_reg[24][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[24][3]' (FDE) to 'cpu/rf_module/rf_reg[22][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[23][3]' (FDE) to 'cpu/rf_module/rf_reg[22][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[22][3]' (FDE) to 'cpu/rf_module/rf_reg[20][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[21][3]' (FDE) to 'cpu/rf_module/rf_reg[20][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[20][3]' (FDE) to 'cpu/rf_module/rf_reg[18][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[19][3]' (FDE) to 'cpu/rf_module/rf_reg[18][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[18][3]' (FDE) to 'cpu/rf_module/rf_reg[16][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[17][3]' (FDE) to 'cpu/rf_module/rf_reg[16][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][3] )
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[31][4]' (FDE) to 'cpu/rf_module/rf_reg[30][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[30][4]' (FDE) to 'cpu/rf_module/rf_reg[28][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[29][4]' (FDE) to 'cpu/rf_module/rf_reg[28][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[28][4]' (FDE) to 'cpu/rf_module/rf_reg[26][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[27][4]' (FDE) to 'cpu/rf_module/rf_reg[26][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[26][4]' (FDE) to 'cpu/rf_module/rf_reg[24][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[25][4]' (FDE) to 'cpu/rf_module/rf_reg[24][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[24][4]' (FDE) to 'cpu/rf_module/rf_reg[22][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[23][4]' (FDE) to 'cpu/rf_module/rf_reg[22][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[22][4]' (FDE) to 'cpu/rf_module/rf_reg[20][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[21][4]' (FDE) to 'cpu/rf_module/rf_reg[20][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[20][4]' (FDE) to 'cpu/rf_module/rf_reg[18][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[19][4]' (FDE) to 'cpu/rf_module/rf_reg[18][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[18][4]' (FDE) to 'cpu/rf_module/rf_reg[16][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[17][4]' (FDE) to 'cpu/rf_module/rf_reg[16][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][4] )
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[31][5]' (FDE) to 'cpu/rf_module/rf_reg[30][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[30][5]' (FDE) to 'cpu/rf_module/rf_reg[28][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[29][5]' (FDE) to 'cpu/rf_module/rf_reg[28][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[28][5]' (FDE) to 'cpu/rf_module/rf_reg[26][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[27][5]' (FDE) to 'cpu/rf_module/rf_reg[26][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[26][5]' (FDE) to 'cpu/rf_module/rf_reg[24][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[25][5]' (FDE) to 'cpu/rf_module/rf_reg[24][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[24][5]' (FDE) to 'cpu/rf_module/rf_reg[22][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[23][5]' (FDE) to 'cpu/rf_module/rf_reg[22][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[22][5]' (FDE) to 'cpu/rf_module/rf_reg[20][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[21][5]' (FDE) to 'cpu/rf_module/rf_reg[20][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[20][5]' (FDE) to 'cpu/rf_module/rf_reg[18][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[19][5]' (FDE) to 'cpu/rf_module/rf_reg[18][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[18][5]' (FDE) to 'cpu/rf_module/rf_reg[16][5]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[17][5]' (FDE) to 'cpu/rf_module/rf_reg[16][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][5] )
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[31][6]' (FDE) to 'cpu/rf_module/rf_reg[30][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[30][6]' (FDE) to 'cpu/rf_module/rf_reg[28][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[29][6]' (FDE) to 'cpu/rf_module/rf_reg[28][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[28][6]' (FDE) to 'cpu/rf_module/rf_reg[26][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[27][6]' (FDE) to 'cpu/rf_module/rf_reg[26][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[26][6]' (FDE) to 'cpu/rf_module/rf_reg[24][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[25][6]' (FDE) to 'cpu/rf_module/rf_reg[24][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[24][6]' (FDE) to 'cpu/rf_module/rf_reg[22][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/rf_module/rf_reg[23][6]' (FDE) to 'cpu/rf_module/rf_reg[22][6]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf_module /\rf_reg[16][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/data_ram_module /\DM_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_name_reg[39] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 938.078 ; gain = 370.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:03 . Memory (MB): peak = 938.078 ; gain = 370.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:03 . Memory (MB): peak = 938.078 ; gain = 370.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:04 . Memory (MB): peak = 1009.234 ; gain = 441.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5410] Found another clock driver cpu_clk_cg:O [E:/6_single_cycle_cpu/single_cycle_cpu_display.v:50]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:06 . Memory (MB): peak = 1014.156 ; gain = 446.297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:06 . Memory (MB): peak = 1014.156 ; gain = 446.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:06 . Memory (MB): peak = 1014.156 ; gain = 446.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:06 . Memory (MB): peak = 1014.156 ; gain = 446.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:06 . Memory (MB): peak = 1014.156 ; gain = 446.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:06 . Memory (MB): peak = 1014.156 ; gain = 446.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |lcd_module    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |lcd_module |     1|
+|2     |BUFG       |     1|
+|3     |BUFGCE     |     1|
+|4     |CARRY4     |    27|
+|5     |LUT1       |     1|
+|6     |LUT2       |   124|
+|7     |LUT3       |    63|
+|8     |LUT4       |    62|
+|9     |LUT5       |   209|
+|10    |LUT6       |   834|
+|11    |MUXF7      |   192|
+|12    |MUXF8      |    84|
+|13    |FDRE       |   843|
+|14    |FDSE       |     7|
+|15    |IBUF       |     3|
+|16    |OBUF       |     8|
++------+-----------+------+
+
+Report Instance Areas: 
++------+--------------------+-----------------+------+
+|      |Instance            |Module           |Cells |
++------+--------------------+-----------------+------+
+|1     |top                 |                 |  2506|
+|2     |  cpu               |single_cycle_cpu |  2336|
+|3     |    alu_module      |alu              |    38|
+|4     |      adder_module  |adder            |     8|
+|5     |    data_ram_module |data_ram         |   490|
+|6     |    rf_module       |regfile          |  1671|
++------+--------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:06 . Memory (MB): peak = 1014.156 ; gain = 446.297
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1014.156 ; gain = 319.406
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:06 . Memory (MB): peak = 1014.156 ; gain = 446.297
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'cpu_clk_cg' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 304 Unisim elements for replacement
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'cpu_clk_cg' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1030.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+191 Infos, 35 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:13 . Memory (MB): peak = 1030.836 ; gain = 728.492
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1030.836 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/p1/p1/p1.runs/synth_1/single_cycle_cpu_display.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file single_cycle_cpu_display_utilization_synth.rpt -pb single_cycle_cpu_display_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 10:01:35 2022...

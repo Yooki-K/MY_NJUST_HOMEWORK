@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1652925704">
+  <File Type="ROUTE-PWR" Name="single_cycle_cpu_display_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="single_cycle_cpu_display.tcl"/>
+  <File Type="BITSTR-BMM" Name="single_cycle_cpu_display_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="single_cycle_cpu_display_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="single_cycle_cpu_display_reports.tcl"/>
+  <File Type="OPT-DCP" Name="single_cycle_cpu_display_opt.dcp"/>
+  <File Type="OPT-DRC" Name="single_cycle_cpu_display_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="single_cycle_cpu_display.hwdef"/>
+  <File Type="PWROPT-DCP" Name="single_cycle_cpu_display_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="single_cycle_cpu_display_placed.dcp"/>
+  <File Type="PLACE-IO" Name="single_cycle_cpu_display_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="single_cycle_cpu_display_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="single_cycle_cpu_display_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="single_cycle_cpu_display_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="single_cycle_cpu_display_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="single_cycle_cpu_display.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="single_cycle_cpu_display_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="single_cycle_cpu_display.bin"/>
+  <File Type="PHYSOPT-DCP" Name="single_cycle_cpu_display_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="single_cycle_cpu_display.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="single_cycle_cpu_display_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="single_cycle_cpu_display_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="single_cycle_cpu_display_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="single_cycle_cpu_display_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="single_cycle_cpu_display_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="single_cycle_cpu_display_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="single_cycle_cpu_display.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="single_cycle_cpu_display_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="single_cycle_cpu_display.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="single_cycle_cpu_display_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="single_cycle_cpu_display_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="single_cycle_cpu_display.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="single_cycle_cpu_display_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="single_cycle_cpu_display_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="single_cycle_cpu_display_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="single_cycle_cpu_display_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="single_cycle_cpu_display_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="single_cycle_cpu_display_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="single_cycle_cpu_display_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="single_cycle_cpu_display_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="single_cycle_cpu_display_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="single_cycle_cpu_display_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="single_cycle_cpu_display_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="single_cycle_cpu_display_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="single_cycle_cpu_display.bit"/>
+  <File Type="BITSTR-RBT" Name="single_cycle_cpu_display.rbt"/>
+  <File Type="BITSTR-NKY" Name="single_cycle_cpu_display.nky"/>
+  <File Type="BG-DRC" Name="single_cycle_cpu_display.drc"/>
+  <File Type="RDI-RDI" Name="single_cycle_cpu_display.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../6_single_cycle_cpu/lcd_module.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../6_single_cycle_cpu/adder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../6_single_cycle_cpu/alu.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../6_single_cycle_cpu/data_ram.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../6_single_cycle_cpu/inst_rom.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../6_single_cycle_cpu/regfile.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../6_single_cycle_cpu/single_cycle_cpu.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../6_single_cycle_cpu/single_cycle_cpu_display.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="single_cycle_cpu_display"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../6_single_cycle_cpu/single_cycle_cpu.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
