@@ -1,0 +1,38 @@
+
+name: 'NJUST-badminton-order'
+on:
+  workflow_dispatch: 
+  
+jobs:
+#将工作流程中运行的所有作业组合在一起
+  order:
+  #定义名为 order 的作业。 子键将定义作业的属性 
+    runs-on: ubuntu-latest
+    #将作业配置为在最新版本的 Ubuntu Linux 运行器上运行
+    #if: github.event.repository.owner.id == github.event.sender.id
+    # https://p3terx.com/archives/github-actions-manual-trigger.html
+    
+    steps:
+    - uses: actions/checkout@v2
+#uses 关键字指定此步骤将运行 actions/checkout 操作的 v3。 这是一个将存储
+#库签出到运行器上的操作，允许您对代码（如生成和测试工具）运行脚本或其他操
+#作。 每当工作流程将针对存储库的代码运行时，都应使用签出操作。
+    
+    - name: 'Set up Python 3.7'
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: 'install requirements'
+      run: |
+        python -m pip install --upgrade pip
+        pip3 install -r ./action/requirements.txt
+       # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi 
+    - name: 'run order.py'
+      run: |
+        python3 ./action/order.py 
+      env: 
+      #设置secrets的环境变量
+        COOKIE: ${{ secrets.COOKIE }}
+        EMAIL: ${{ secrets.EMAIL }}
+        MM: ${{ secrets.MM }}
+
