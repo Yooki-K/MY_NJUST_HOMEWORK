@@ -186,7 +186,7 @@ if __name__ == '__main__':
 		# print(datetime.now().strftime("%H:%M:%S"))
 		log.append(datetime.now().strftime("%H:%M:%S"))
 		# 美国时间慢了我们8小时
-		if ((datetime.now()).strftime("%H:%M")) >= '14:00':
+		if ((datetime.now()).strftime("%H:%M")) >= '14:00' and ((datetime.now()).strftime("%H:%M"))<"16:00":
 			log.append('场地预定已结束')
 			break
 		if ((datetime.now()).strftime("%H:%M")) >= '00:00':
