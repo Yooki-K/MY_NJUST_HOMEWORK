@@ -189,14 +189,14 @@ if __name__ == '__main__':
 		if ((datetime.now()).strftime("%H:%M")) >= '14:00' and ((datetime.now()).strftime("%H:%M"))<"16:00":
 			log.append('场地预定已结束')
 			break
-		if ((datetime.now()).strftime("%H:%M")) >= '00:00':
+		# if ((datetime.now()).strftime("%H:%M")) >= '00:00':
         #   run() demo
         #   result = run(result)
 		#	if result is None:
 		#		break
 			# run_all() demo
-			if run_all(result):
-				break		
+		if run_all(result):
+			break		
 		time.sleep(0.5)
 	sendMail('\n'.join(log),'NJUST羽毛球订场脚本运行情况','1486147017@qq.com','ky')
 
